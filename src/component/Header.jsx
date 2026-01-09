@@ -1,6 +1,7 @@
 import React from 'react'
 // import '.App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import About from './About';
 
 const Header = () => {
   return (
@@ -23,9 +24,8 @@ const Header = () => {
 
       <div id="hs-navbar-basic-usage" className="hidden hs-collapse sm:overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-basic-usage-collapse">
         <div className="flex flex-col gap-y-3 sm:gap-y-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a className="sm:p-2 font-medium text-blue-500 focus:outline-hidden" href="#" aria-current="page">Active</a>
-
-          <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:inside] [--is-collapse:true] sm:[--is-collapse:false] ">
+          <Link to={About} className="sm:p-2 font-medium text-blue-500 focus:outline-hidden" aria-current="page">About</Link>
+           <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover] [--auto-close:inside] [--is-collapse:true] sm:[--is-collapse:false] ">
             <button id="hs-mega-menu" type="button" className="hs-dropdown-toggle sm:p-2 flex items-center w-full text-gray-600 font-medium hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" aria-haspopup="menu" aria-expanded="false" aria-label="Mega Menu">
               Mega Menu
               <svg className="hs-dropdown-open:-rotate-180 sm:hs-dropdown-open:rotate-0 duration-300 ms-auto sm:ms-2 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
@@ -128,6 +128,11 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <Link to={About} className="sm:p-2 font-medium text-blue-500 focus:outline-hidden" aria-current="page">About</Link>
+          <Link to={About} className="sm:p-2 font-medium text-blue-500 focus:outline-hidden" aria-current="page">About</Link>
+          <Link to={About} className="sm:p-2 font-medium text-blue-500 focus:outline-hidden" aria-current="page">About</Link>
+
+         
 
           <a className="sm:p-2 font-medium text-gray-600 hover:text-gray-400 focus:outline-hidden focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Project</a>
           
